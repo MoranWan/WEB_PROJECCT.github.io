@@ -1,0 +1,52 @@
+@charset "utf-8";
+.mid{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.masterpagepart{
+    width: 1200px;
+    height: 650px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-image: url("../image/main4.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    overflow: hidden;
+    opacity: 0.9;
+    border-radius: 50px;
+
+}
+
+.masterpagepart .left{
+    width: 400px;
+    height: 100%;
+}
+
+.masterpagepart .right{
+    width: 600px;
+    height: 100%;
+}
+.masterpagepart .goal{
+    color: rgba(50, 97, 78, 0.8);
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.masterpagepart .goal h1{
+    font-size: 4em;
+    font-weight: bolder;
+    line-height: 200px;
+}
+
+.masterpagepart .goal p{
+    word-wrap: break-word;
+}
+
+
+

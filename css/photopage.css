@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/*mainpage界面的标题*/
+.titleimg .title{
+    width: 1000px;
+    padding:200px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: rgba(49, 70, 87,0.9);
+}
+
+
+.sec{
+    height: 40vh;
+    width: 100vw;
+    
+}
+
+.pt{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 250px;
+    float: left;
+    margin: 150px 0px 0px 10px;
+    box-shadow: 0 0 15px rgb(59, 73, 95);
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+
+
+.part1 .img{
+    background-image: url("../image/picture1.jpg");
+}
+.part2 .img{
+    background-image: url("../image/picture2.jpg");
+}
+.part3 .img{
+    background-image: url("../image/picture3.jpg");
+}
+
+
+.pt .img{
+    height: 200px;
+    width: 250px;
+    background-size: cover;
+    background-position: 0px -10px;
+    transition: all 0.5s ease 0s;
+    opacity: 0.8;
+}
+
+.pt .img:hover{
+    transform: scale(1.1);
+}
+
+

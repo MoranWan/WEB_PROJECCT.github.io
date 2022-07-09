@@ -1,0 +1,88 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* 顶部列表 */
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1540px;
+    height: 70px;
+    top: 0px;
+    background-color: rgba(157, 193, 178, 0.8);
+    overflow: hidden;
+    font-size: 20px;
+    color: rgba(50, 97, 78, 0.8);
+    opacity: 0.8;
+    z-index: 1000;
+}
+.mainpagenav{
+    animation: load2 1s linear;
+}
+
+nav:hover{
+    opacity: 0.95;
+}
+nav .navtitle{
+    padding-left: 50px;
+    width: 30%;
+}
+nav .navtitle strong{
+    font-size: 50px;
+    font-weight: bolder;
+}
+/* 选中按钮移动 */
+nav a{
+   display: block;
+   justify-content: center;
+   text-decoration: none;
+   z-index: 1;
+   height: inherit;
+   line-height: 70px;
+   width: 120px;
+   text-align: center;
+   font-weight: bolder;
+   color: rgba(50, 97, 78, 0.8);
+   transition: 0.5s;
+}
+nav .navanim{
+    position: absolute;
+    height: inherit;
+    z-index: 0;
+    background:rgba(157, 193, 178, 0.8);
+    border-radius: 5px;
+    left: 0px;
+    transition:  all .5s ease 0s;
+    width: 120px;
+}
+nav .mainpage,a:nth-child(2):hover~.navanim{
+    width: 120px;
+    left: 535px;
+}
+
+nav .cardpage,a:nth-child(3):hover~.navanim{
+    width: 120px;
+    left: 670px;
+}
+
+nav .storypage,a:nth-child(4):hover~.navanim{
+    width: 120px;
+    left: 810px;
+}
+
+nav .photopage,a:nth-child(5):hover~.navanim{
+    width: 120px;
+    left: 950px;
+}
+nav .masterpage,a:nth-child(6):hover~.navanim{
+    width: 120px;
+    left: 1085px;
+}
+nav .none{
+    width: 20%;
+}
+
